@@ -84,7 +84,7 @@ server <- function(input, output) {
         ggplot(dat(), aes(x = año, y = n, group = tipo)) + 
             geom_line(size = 1, aes(colour = tipo)) +
             labs(x = "Año", y = "Frecuencia", group = "Topografía", 
-                 color = "Topografía", title = "Cantidad de nuevos casos según tipo de cáncer")
+                 color = "Topografía", title = "Cantidad de nuevos casos según tipo de cáncer, durante 2015 a 2019")
     })
     
     output$cplot <- renderPlot({
